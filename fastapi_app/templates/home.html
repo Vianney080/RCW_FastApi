@@ -1,12 +1,19 @@
-{% extends "base.html" %} 
- 
-{%block title %} Home {% endblock %}  
+{% extends "base.html"  %}  
+
+{% block titel %}  Home {% endblock %}
 
 
-{% block content %}
-<h1> welcome to the fast API  application</h1>
-<p> This is a simple application to demonstrate the use of FastAPI with HTML templates.</p>
-<p> You can login, register, and view the about page.</p>
+{% block content  %}
+    <h1>Welcome to the FastAPI-Dash Application</h1>
+    <p>il s'agit d'une application Web qui intègre FastAPI et Dash pour 
+        la visualisation des données et la gestion des utilisateurs.</p>
 
-{%endblock %}
+     <h3> Aujourd'hui est {{info.date}} et il est {{info.time}}</h3>   
 
+
+     <p>City : {{info.weather.city}}</p>
+     <p> Temperature : {{info.weather.temperature}}</p>
+     <p>Description: {{info.weather.description}}</p>
+
+
+{% endblock %}
