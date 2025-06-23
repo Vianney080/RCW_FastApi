@@ -8,7 +8,7 @@ import requests
 app = dash.Dash(__name__, requests_pathname_prefix='/dashboard/')
  
 # Configuration API - Utiliser votre API Azure déployée
-AZURE_API_URL = 'https://meteo-casablanca-api-hsd2hrhzemfvh3as.canadaeast-01.azurewebsites.net'
+AZURE_API_URL = 'https://weatapi-eqe3bcbwcmcyd2hz.canadaeast-01.azurewebsites.net'
  
 def get_weather():
     """
